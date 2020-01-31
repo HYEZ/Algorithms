@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "cstdio": "cpp",
+        "unordered_map": "cpp",
+        "utility": "cpp",
+        "memory": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "ostream": "cpp"
+    }
+}
