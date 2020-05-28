@@ -18,10 +18,6 @@ def solution(arr):
 		if prev == ")" and p == "(":
 			answer += cnt
 		prev = p
-			
-		
-
-
 	
 	return answer
 
