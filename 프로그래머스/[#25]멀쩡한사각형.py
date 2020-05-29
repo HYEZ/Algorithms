@@ -7,7 +7,10 @@ def solution(w, h):
 	a = f.numerator #분자
 	b = f.denominator #분모
 	k = max(w, h) // b # 최대공약수
+	print(k)
 	return ((w * h) - (w + h - k))
+
+def gcd(a,b): return b if (a==0) else gcd(b%a,a)    
 
 print(solution(4, 8))
 print("--------")
