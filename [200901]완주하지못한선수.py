@@ -19,3 +19,4 @@ def solution2(participant, completion):
     
 print(solution2(['leo', 'kiki', 'eden'], ['kiki', 'eden']))
 
+print('test')
