@@ -1,5 +1,9 @@
 from collections import deque
 
+# 최단거리 = 큐를 활용!
+# 간선의 비용이 같다 = bfs
+# 간선의 비용이 다르다 = 다익스트라
+
 n, m = (5, 6)
 graph = [
     [1,0,1,0,1,0],
@@ -13,12 +17,13 @@ graph = [
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
-def bfs(x, y):
+def bfs(x, y): # 큐
     queue = deque()
     queue.append((x, y))
 
+    # 큐가 빌때까지 반복
     while queue:
-        x, y = queue.popleft()
+        x, y = queue.popleft() # 큐에서 원소를 꺼낼 떄 사용
         # 상하좌우로 보기
         for i in range(4):
             nx = x + dx[i]
