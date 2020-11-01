@@ -30,7 +30,7 @@ def solution(board):
         # print(robot, q)
 
         
-        if l == (n-1, n-1) or r == (n-1, n-1):
+        if l == (n-1, n-1) or r == (n-1, n-1): 
             return time
         
         for nxt in move(l, r, board):
