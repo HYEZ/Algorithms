@@ -3,24 +3,15 @@
 
 
 def solution(number, k):
-    collected = []  
-
-    for i, num in enumerate(number):
-
-        # k개 만큼의 숫자를 빼냈을 때, i의 인덱스를 기억하기 위해서 i를 사용
-        while len(collected) > 0 and collected[-1] < num and k > 0:
-            collected.pop()  # 리스트이 맨 끝에 있는 원소 하나를 없앤다.
+    stack = [number[0]]
+    for num in number[1:]:
+        while len(stack) > 0 and stack[-1] < num and k > 0:
             k -= 1
-
-        if k == 0:
-            collected += list(number[i:])
-            break
-        
-        collected.append(num)
-
-    collected = collected[:-k] if k > 0 else collected # 같은 숫자 여러번 반복일때 k 가 남을 수도 있어서 그거 방지함
-
-    return ''.join(collected)
+            stack.pop()
+        stack.append(num)
+    if k != 0:
+        stack = stack[:-k]
+    return ''.join(stack)
 
 
 number = "1924"
