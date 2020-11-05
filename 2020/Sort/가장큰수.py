@@ -7,7 +7,7 @@ def solution(numbers):
 
     return str(int(''.join(numbers)))
     
-    # 333 343434 303030
+    # 333 343434 303030 문자열 비교
 
 numbers = [6, 10, 2]
 numbers = [3, 30, 34, 5, 9]	
