@@ -1,4 +1,6 @@
 # https://programmers.co.kr/learn/courses/30/lessons/43238?language=python3
+# 다시 풀어보기
+
 
 # 입국심사를 기다리는 사람 수 n
 # 각 심사관이 한 명을 심사하는데 걸리는 시간이 담긴 배열 times
