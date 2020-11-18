@@ -11,13 +11,13 @@ def solution(triangle):
         for j in range(0, i+1):
             if j == 0:
                 d[i][j] += d[i-1][0]
-            elif j > i-1 :
+            elif j == i:
                 d[i][j] += d[i-1][j-1]
             else:
                 d[i][j] += max(d[i-1][j-1], d[i-1][j])
 
     return max(d[-1])
-    
+
 triangle = [[7], [3, 8], [8, 1, 0], [2, 7, 4, 4], [4, 5, 2, 6, 5]]	
 
 print(solution(triangle))
