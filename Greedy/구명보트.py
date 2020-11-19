@@ -9,11 +9,10 @@ def solution(people, limit):
     l, r = len(people)-1, 0 # 정렬된 애들을 왼쪽방향, 오른쪽방향으로 가게한다!
 
     while r <= l:
-        print(people[r] + people[l], l, r)
         if people[r] + people[l] <= limit:
             r += 1
         l -= 1
-        answer += 1
+        answer += 1g
         
     return answer
 
