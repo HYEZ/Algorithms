@@ -9,7 +9,7 @@ import heapq
 def solution(jobs):
     answer = 0
     start = 0 # 현재까지 진행된 작업 시간
-    n = len(jobs)
+    n = len(jobs) 
     jobs.sort(key=lambda x:x[1]) # 소요시간으로 정렬
 
     while len(jobs) != 0:
