@@ -1,3 +1,5 @@
+# 복잡도 높음
+
 import sys
 input = sys.stdin.readline
 INF = int(1e9)
@@ -14,7 +16,7 @@ for _ in range(m):
     graph[a].append((b, c))
 
 
-# 방문하지 않은 노드 중에서 가장 최단 거리가 짧은 노드의 번호를 반환
+# 방문하지 않은 노드 중에서 가장 최단 거리가 짧은 노드의 번호를 반환 => 힙을 이용하면 빨라진다.
 def get_smallest_node():
     min_value = INF 
     index = 0
