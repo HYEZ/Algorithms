@@ -1,4 +1,6 @@
+# 한 지점에서 다른 특정 지점까지(모든 지점까지) 최단 경로를 구해야하는 경우 (greedy)
 # ElogV (낮은 복잡도)
+
 import heapq
 import sys
 input = sys.stdin.readline
