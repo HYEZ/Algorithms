@@ -29,7 +29,6 @@ def solution(n, results):
                 if  graph[i][j] == INF and graph[i][k] == graph[k][j]:
                     graph[i][j] = graph[i][k]
 
-    print(graph[1:])
     answer = 0
     for i in range(1, n+1):
         cnt = 0
@@ -42,7 +41,6 @@ def solution(n, results):
     return answer
 
 
-    print(graph[1:])
 
 from collections import deque
 def solution2(n, results):
@@ -75,13 +73,8 @@ def solution2(n, results):
         y = res[i+1]
         
         if [x, y] in results:
-            print(x, y)
             answer += 1
-    
-    print(answer)
-       
-    print(graph, indegree, res)
-
+    return answer
 
 
 n = 5
