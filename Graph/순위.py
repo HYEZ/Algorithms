@@ -42,41 +42,6 @@ def solution(n, results):
 
 
 
-from collections import deque
-def solution2(n, results):
-    indegree = [0] * (n+1)
-    graph = [[] for _ in range(n+1)]
-    for result in results:
-       x, y = result
-       graph[x].append(y)
-       indegree[y] += 1
-
-    res = []
-    q = deque()
-
-    for i in range(1, n+1):
-        if indegree[i] == 0:
-            q.append(i)
-
-    while q:
-        now = q.popleft()
-        res.append(now)
-
-        for i in graph[now]:
-            indegree[i] -= 1
-            if indegree[i] == 0:
-                q.append(i)
-
-    answer = 0
-    for i in range(len(res) - 1):
-        x = res[i]
-        y = res[i+1]
-        
-        if [x, y] in results:
-            answer += 1
-    return answer
-
-
 n = 5
 results = [[4, 3], [4, 2], [3, 2], [1, 2], [2, 5]]	
 print(solution(n, results))
