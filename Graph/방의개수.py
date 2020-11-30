@@ -17,7 +17,6 @@ def solution(arrows):
 
     for i in arrows:
         for _ in range(2):
-
             nx, ny = (now[0]+dx[i], now[1]+dy[i])
             if (nx, ny) in visited and edges[(now[0], now[1], nx, ny)] == 0:
                 answer += 1
