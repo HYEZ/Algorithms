@@ -1,3 +1,5 @@
+# facebook interview
+
 s = '3012345'
 arr = list(map(int, list(s)))
 
