@@ -1,20 +1,39 @@
 # https://programmers.co.kr/learn/courses/30/lessons/60057
 # 2020 카카오 블라인드채용
-
 def solution(s):
     answer = int(1e9)
-    for i in range(1, len(s)):
-        # i 단위로 자르기
-        
-        for j in range(1, i+1):
-            print(i, j)
-            for k in range(j, len(s), i):
-                
-                print(s[j:k], end='_')
-            print()
+    for i in range(1, len(s)+1):
+        save = ""
+        prev = ""
+        n = 1
+        for j in range(0, len(s), is)
+            if prev == s[j:j+i]:
+                n += 1
+            else:
+                if n > 1:
+                    save += str(n)+prev
+                else:
+                    save += prev
+                prev = s[j:j+i]
+                n = 1
 
+        if n > 1:
+            save += str(n)+prev
+        else:
+            save += prev
         
+        answer = min(answer, len(save))
+        
+    return answer
+
+
+
+
             
 
 s = "aabbaccc"	
+# s = "ababcdcdababcdcd"	
+# s = "abcabcdede"
+# s = "abcabcabcabcdededededede"
+# s = "xababcdcdababcdcd"
 print(solution(s))
