@@ -6,7 +6,7 @@ def solution(s):
         save = ""
         prev = ""
         n = 1
-        for j in range(0, len(s), is)
+        for j in range(0, len(s), i):
             if prev == s[j:j+i]:
                 n += 1
             else:
@@ -23,7 +23,7 @@ def solution(s):
             save += prev
         
         answer = min(answer, len(save))
-        
+
     return answer
 
 
