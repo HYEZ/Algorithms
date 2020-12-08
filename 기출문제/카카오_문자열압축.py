@@ -1,5 +1,6 @@
 # https://programmers.co.kr/learn/courses/30/lessons/60057
-# 2020 카카오 블라인드채용
+# 2020 카카오 블라인드채용 
+# 구현
 def solution(s):
     answer = int(1e9)
     for i in range(1, len(s)+1):
@@ -24,7 +25,7 @@ def solution(s):
         
         answer = min(answer, len(save))
 
-    return answer
+    return answer8
 
 
 
