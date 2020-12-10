@@ -1,4 +1,5 @@
 # 삼성전자 SW 역량테스트
+# bfs
 from collections import deque
 
 n, l, r = map(int, input().split()) 

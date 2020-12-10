@@ -1,6 +1,6 @@
 # 삼성전자 SW 역량테스트
 # https://www.acmicpc.net/problem/14888
-
+# bfs
 
 from itertools import permutations
 from collections import deque
