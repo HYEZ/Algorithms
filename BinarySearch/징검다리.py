@@ -17,6 +17,7 @@ def solution(distance, rocks, n):
         pre_rock = 0 # 이전에 선택된 rock (거리 구하기 위해서)
         cnt = 0 # 제거한 바위 개수
         min_value = 1000000001 # 최소값 초기화
+        
         for rock in rocks:
             if rock - pre_rock < mid: # 현재 rock이랑 이전 rock뺀게 mid 보다 작으면 == 최소값을 안만드므로 해당 바위를 제거함
                 cnt += 1 # 제거한 바위 개수 1 증가
@@ -29,7 +30,6 @@ def solution(distance, rocks, n):
         else: # 작거나 같으면 => 덜 제거해도 된다는 것. 최대값이 늘어난다.
             answer = min_value # 답을 최소값으로 바꿔줌
             start = mid + 1
-
     return answer
 
 
