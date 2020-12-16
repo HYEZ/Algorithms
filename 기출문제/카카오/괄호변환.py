@@ -1,4 +1,4 @@
-# https://programmers.co.kr/learn/courses/30/lessons/60058
+# https://programmers.co.kr/learn/courses/30/lessons/60058()
 # 2020 카카오 신입 공채 1차
 
 def solution(p):
