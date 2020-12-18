@@ -1,4 +1,4 @@
-## 알고리즘&코딩테스트 스터디
+# 알고리즘&코딩테스트 스터디
 
 ## 기출문제
 - [카카오](https://github.com/HYEZ/Algorithms/tree/master/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4)
