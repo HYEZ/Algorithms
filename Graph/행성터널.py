@@ -1,7 +1,9 @@
 # https://www.acmicpc.net/problem/2887
 
 # 풀이) 최소신장트리 - 크루스칼 알고리즘
-
+import sys
+input = sys.stdin.readline
+ 
 def find_parent(parent, x):
     if parent[x] != x:
         parent[x] = find_parent(parent, parent[x])
