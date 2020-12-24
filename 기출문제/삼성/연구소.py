@@ -1,5 +1,6 @@
-# 삼성전자 SW 역량테스트
-# dfs 
+# https://www.acmicpc.net/problem/14502
+# 삼성전자 SW 역량테스트 - 다시 풀기!
+# dfs
 import copy
 lab = [
     [0, 0, 0, 0, 0, 0],
@@ -10,6 +11,7 @@ lab = [
 
 n = 4
 m = 6
+
 virus_list = []
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]

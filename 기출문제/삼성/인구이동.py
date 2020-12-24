@@ -1,4 +1,5 @@
-# 삼성전자 SW 역량테스트
+# https://www.acmicpc.net/problem/16234
+# 삼성전자 SW 역량테스트 - 다시 풀기!!!
 # bfs
 from collections import deque
 

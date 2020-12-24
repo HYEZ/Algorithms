@@ -2,30 +2,7 @@
 
 from collections import deque
 
-# def solution(n, computers):
-#     c = [[] for _ in range(n)]
-#     v = [False]*n # 방문노드 체크
 
-#     for i in range(n):
-#         for j in range(n):
-#             if computers[i][j] == 1 and i != j:
-#                 c[i].append(j)
-#     # print(c)
-#     queue = deque([0])
-#     v[0] = True
-#     answer = 0
-#     while queue:
-#         answer += 1
-#         print('a', answer, v, c, queue)
-#         q = queue.popleft()
-#         for i in c[q]:
-#             print('test', i)  
-#             if not v[i]:
-#                 print('i;', i)
-#                 queue.append(i)
-#                 v[i] = True
-#         print()
-#     return answer
             
 def solution(n, computers):
     c = [[] for _ in range(n)]
