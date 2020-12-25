@@ -33,7 +33,8 @@ fish = [[0]*n for _ in range(n)]
 
 
 dx = [0, -1, -1, -1, 0, 1, 1, 1]
-dy = [-1, -1, 0, 1, 1, -1, 0, 1]
+dy = [-1, -1, 0, 1, 1, 
+1, 0, -1]
 
 for i in range(n):
     data = list(map(int, input().split()))
@@ -47,35 +48,30 @@ fish[0][0] = 0
 print(fish)
 
 def shift_fish(now_fish):
-    print(now_fish)
+    # print(now_fish)
     for i in range(n):
         for j in range(n):
             if fish[i][j] != 0 and fish[i][j][0] == now_fish:
                 # 물고기 방향 이동 (빈칸, 다른 물고기가 있는 칸으로)
                 cur_direction = fish[i][j][1]
-                print(cur_direction)
                 for k in range(cur_direction, cur_direction+8):
-                    k = k // 8
-                    nx = i + dx[k]
-                    ny = j + dy[k]
+                    k = k % 8
+                    nx = j + dx[k]
+                    ny = i + dy[k]
+                    # print(k, i, j, dx[k], dy[k], nx, ny)
                     if nx < 0 or ny < 0 or nx >= n or ny >= n:
                         continue
-                    if fish[nx][ny] == 0: # 상어가 있는 칸
+                    if fish[ny][nx] == 0: # 상어가 있는 칸
                         continue
                     # 물고기 위치 swap
                     tmp = fish[i][j]
-                    fish[i][j] = fish[nx][ny]
-                    fish[nx][ny] = tmp
+                    fish[i][j] = fish[ny][nx]
+                    fish[ny][nx] = tmp
+                    return fish
     return fish    
 
-
-
-
-
-                
-
     
-
+# 물고기 이동
 now_fish = 1
 while now_fish <= 16:
     fish = shift_fish(now_fish)
@@ -83,3 +79,4 @@ while now_fish <= 16:
     now_fish += 1
 
 
+# 상어 이동
