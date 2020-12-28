@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/16236
-# 삼성전자 2020 상반기 공채
+# 삼성전자 2020 상반기 공채 - 다시풀기!
 # 풀이) bfs
 
 from collections import deque
