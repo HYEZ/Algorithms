@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/14501
-
+# 풀이) dp
 n = int(input())
 t, p = [], []
 
