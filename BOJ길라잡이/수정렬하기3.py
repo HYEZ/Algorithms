@@ -1,13 +1,16 @@
 # https://www.acmicpc.net/problem/10989
-# 풀이) heapq
+# 풀이) 정렬
 
-import heapq
 
+
+import sys
+input = sys.stdin.readline
 n = int(input())
-q = []
+cnt = [0 for i in range(10000+1)]
 
-for _ in range(n): 
-    heapq.heappush(q, int(input()))
+for i in range(n):
+    cnt[int(input())] += 1
 
-while q:
-    print(heapq.heappop(q))
+for i in range(1, 10000+1):
+    for j in range(cnt[i]):
+        print(i)
