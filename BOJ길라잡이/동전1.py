@@ -12,7 +12,7 @@ for _ in range(n):
         price.append(data)
 
 n = len(price)
-if k == 0:
+if n == 0:
     print(0)
 else:
     dp = [0] * (k+1)
