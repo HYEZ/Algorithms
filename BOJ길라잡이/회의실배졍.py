@@ -11,7 +11,6 @@ for _ in range(n):
 
 arr.sort(key=lambda x: (x[1], x[0]))
 
-print(arr)
 
 end_time = arr[0][1]
 cnt = 1
