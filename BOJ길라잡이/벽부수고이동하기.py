@@ -16,10 +16,6 @@ for _ in range(n):
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
-# 맵에서 0은 이동할 수 있는 곳을 나타내고, 1은 이동할 수 없는 벽이 있는 곳 => 0, 1 을 cost라고 생각
-# 1개까지 벽을 부시기 가능!! # 0 먼저 뽑되, 1을 이미 뽑았으면 Return 
-
-
 def dijkstra():
     q = []
     heapq.heappush(q, (arr[0][0], 0, 0))
@@ -27,10 +23,6 @@ def dijkstra():
 
     while q:
         t, x, y = heapq.heappop(q)
-
-        # 현재 노드가 이미 처리된적이 있으면 무시
-        # if distance[x][y] < dist: 
-        #     continue
 
         # 현재 노드와 인접한 노드들의 거리 계산
         for i in range(4):
@@ -50,6 +42,7 @@ def dijkstra():
                         heapq.heappush(q, (arr[nx][ny], nx, ny))
 
 dijkstra()
+
 if distance[n-1][m-1] == INF:
     print(-1) 
 else:
