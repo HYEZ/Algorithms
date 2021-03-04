@@ -1,6 +1,8 @@
 # https://www.acmicpc.net/problem/1202    
 # 풀이) 
 import heapq
+import sys
+input = sys.stdin.readline
 
 jew = []
 bags = []
