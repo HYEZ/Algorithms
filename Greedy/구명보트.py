@@ -12,7 +12,7 @@ def solution(people, limit):
         if people[r] + people[l] <= limit:
             r += 1
         l -= 1
-        answer += 1g
+        answer += 1
         
     return answer
 
