@@ -1,13 +1,14 @@
 # https://www.acmicpc.net/problem/2585
-# 풀이) 최단거리
+# 풀이) BFS + Binary Search
 
-import math, heapq
+import math
 from collections import deque
+import sys
+input = sys.stdin.readline
 n, k = map(int, input().split())
-arr = [(0, 0)]
-for _ in range(n):
-    x, y = map(int, input().split())
-    arr.append((x, y))
+
+arr = [[0, 0]] + [list(map(int, input().split())) for _ in range(n)]
+
 
 s = (0, 0)
 t = (10000, 10000)
@@ -37,9 +38,11 @@ def bfs(c):
                             return True
                         q.append(i)
         cnt += 1
+    return False
         
 start = 0
 end = 10000
+result = 0
 while start <= end:
     mid = (start + end) // 2
     if bfs(mid * 10):
