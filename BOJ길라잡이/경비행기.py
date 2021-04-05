@@ -22,22 +22,22 @@ def bfs(c):
     cnt = 0
 
     while q:
-        if cnt > k:
+        if cnt > k: # 연료 c를 위해 k보다 많이 방문했으면 return False
             return False
         
-        for _ in range(len(q)):
+        for _ in range(len(q)): # q 개수만큼 방문 체크
             vertex = q.popleft()
             if not visited[vertex]:
                 visited[vertex] = 1
 
-                for i in range(1, n+1):
-                    dist = distance(arr[vertex], arr[i])
-                    if dist <= c:
-                        dist_dest = distance(t, arr[i])
-                        if dist_dest <= c:
-                            return True
+                for i in range(1, n+1): # arr 개수만큼 체크
+                    dist = distance(arr[vertex], arr[i]) # 현재 pop한 애랑 나머지 애들의 distance
+                    if dist <= c: # distacne가  c보다 작으면 append
+                        dist_dest = distance(t, arr[i])  
+                        if dist_dest <= c: 
+                            return True # 목적지까지 distance가 c보다 작으면 그냥 return
                         q.append(i)
-        cnt += 1
+        cnt += 1 # 방문개수 증가
     return False
         
 start = 0
