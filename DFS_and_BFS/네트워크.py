@@ -44,4 +44,3 @@ computers = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 print(solution(n, computers))
 
 
-<a href="https://elasticbeanstalk-us-west-2-800068098556.s3.amazonaws.com/challenge-website/public_data_with_labels/test.tsv?AWSAccessKeyId=AKIA3UR6GLH6F73MJVWF&amp;Signature=9lxuOiyCZBG38FpxTL7VHy59UXo%3D&amp;Expires=1604548207"> click to download </a>
