@@ -11,7 +11,7 @@ def find_parent(parent, x):
 
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
-    b = find_parent(parent, b)
+    b = find_parent(parent, b) 
     if a < b:
         parent[b] = a
     else:
@@ -32,7 +32,7 @@ for i in range(p):
         break
     union_parent(parent, parent[g], parent[g]-1)
     answer += 1
-    
+
 print(answer)
 
 
