@@ -11,7 +11,7 @@ def find_parent(parent, x):
 
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
-    b = find_parent(parent, b)
+    b = find_parent(parent, b) 
     if a < b:
         parent[b] = a
     else:
@@ -22,12 +22,20 @@ g = int(input()) # 게이트 수
 gate = [0] * (g+1)
 
 p = int(input()) # 비행기 수
-arr = []
 parent = [i for i in range(g+1)]
 
+answer = 0
 for i in range(p):
-    n = int(input())
-    arr.append(n)
+    g = int(input())
+    # parent를 g-1이랑 union 시켜서 0 이 되면 break
+    if find_parent(parent, g) <= 0:
+        break
+    union_parent(parent, parent[g], parent[g]-1)
+    answer += 1
+
+print(answer)
+
+
 
     
 
