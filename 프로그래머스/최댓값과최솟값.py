@@ -1,5 +1,5 @@
 # https://programmers.co.kr/learn/courses/30/lessons/12939
-# 풀이) 
+# 풀이) min, max
 
 def solution(s):
     s = list(map(int, s.split()))
