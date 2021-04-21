@@ -1,4 +1,5 @@
 # https://programmers.co.kr/learn/courses/30/lessons/64064
+# 2019 카카오 겨울 인턴쉽
 # 풀이) 순열, 경우의수
 
 from itertools import permutations
