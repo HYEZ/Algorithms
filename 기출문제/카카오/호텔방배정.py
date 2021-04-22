@@ -1,31 +1,32 @@
 # https://programmers.co.kr/learn/courses/30/lessons/64063
 # 카카오 2019 겨울 인턴쉽
-# 풀이) 해쉬, 이진탐색
+# 풀이) 해쉬, 재귀
 import sys
 sys.setrecursionlimit(10**9)
 
 from bisect import bisect_left, bisect_right, insort_right
 
-# # 3. 서로소 집합 알고리즘
-
-# def find_parent(parent, x):
-#     d
-
-# def solution(k, room_number):
-#     # parent = [i for i in range(1, k+1)]
-#     parent = [0] * (k+1)
-#     customer = [0] * len(room_number)
+# # 3. 재귀, 딕셔너리
+def find_emptyroom(num, rooms):
+    if num not in rooms.keys():
+        rooms[num] = num+1
+        return num
+    
+    empty = find_emptyroom(rooms[num], rooms) # 재귀 함수
+    rooms[num] = empty+1 
+    return empty
     
 
-#     for i, n in enumerate(room_number):
-#         key = find_parent(parent, n)
-#         customer[i] = key
+def solution(k, room_number):
+    rooms = dict()
+    for i, n in enumerate(room_number):
+        key = find_emptyroom(n, rooms)
 
-#     return customer
+    return list(rooms.keys())
 
 
 # 2. bisect로 key value 찾기 (효율성 실패)
-def solution(k, room_number):
+def solution2(k, room_number):
     rooms = []
     customer = [0] * len(room_number)
 
@@ -39,10 +40,7 @@ def solution(k, room_number):
         return key
 
     for i, n in enumerate(room_number):
-        if n not in rooms:
-            key = n
-        else:
-            key = get_key(rooms, n)
+        key = get_key(rooms, n)
         insort_right(rooms, key)
 
         customer[i] = key
