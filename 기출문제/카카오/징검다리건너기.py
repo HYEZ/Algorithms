@@ -1,4 +1,5 @@
 # https://programmers.co.kr/learn/courses/30/lessons/64062
+# 카카오 2019 겨울 인턴쉽
 # 풀이) 이진탐색
 
 
@@ -30,7 +31,7 @@ def solution(stones, k):
         else:
             answer = min(mid, answer)
             end = mid - 1
-            
+
     return answer
 
 
