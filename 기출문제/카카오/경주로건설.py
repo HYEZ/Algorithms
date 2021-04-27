@@ -1,4 +1,5 @@
 # https://programmers.co.kr/learn/courses/30/lessons/67259
+# 카카오 2020 인턴쉽
 # 풀이) DP + BFS
 
 from collections import deque
