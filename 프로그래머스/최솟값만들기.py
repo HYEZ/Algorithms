@@ -2,19 +2,14 @@
 # 풀이) 그리디, 정렬
 
 def solution(A, B):
-    answer = [0, 0]
+    answer = 0
 
     A.sort()
     B.sort(reverse=True)
     for i in range(len(A)):
-        answer[0] += A[i] * B[i]
-
-    A.sort(reverse=True)
-    B.sort()
-    for i in range(len(A)):
-        answer[1] += A[i] * B[i]
-
-    return min(answer)
+        answer += A[i] * B[i]
+ 
+    return answer
 
 
 
