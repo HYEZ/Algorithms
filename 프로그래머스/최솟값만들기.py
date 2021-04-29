@@ -12,6 +12,5 @@ def solution(A, B):
     return answer
 
 
-
 A, B = [1, 4, 2], [5, 4, 4]
 print(solution(A, B))
