@@ -1,6 +1,8 @@
 # https://www.hackerrank.com/challenges/bigger-is-greater/problem
 # 풀이) 구현
 
+
+
 def biggerIsGreater(w):
     w = list(w)
 
