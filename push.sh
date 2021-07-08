@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git config --global user.name "HYEZ"
+git config --global user.email oohyejioo@gmail.com
+
 message=""
 
 if [ "$1" = "" ]

@@ -17,7 +17,6 @@
 ## :pencil2: 기출문제
 - [카카오(in Programmers)](https://github.com/HYEZ/Algorithms/tree/master/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4)
 - [삼성(in Baekjoon)](https://github.com/HYEZ/Algorithms/tree/master/%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C/%EC%82%BC%EC%84%B1)
-  - [삼성 SW 역량 테스트 기출 문제](https://www.acmicpc.net/workbook/view/1152)
 
 ## :pencil2: 문제집
 - [프로그래머스](https://github.com/HYEZ/Algorithms/tree/master/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4)
@@ -33,3 +32,4 @@
 - 해커랭크
 - 이것이 코딩테스트다
 - 코딩 인터뷰 완전분석
+- [삼성 SW 역량 테스트 기출 문제](https://www.acmicpc.net/workbook/view/1152)
